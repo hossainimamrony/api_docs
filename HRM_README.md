@@ -579,6 +579,6 @@ POST /create_salary/
 
 ## Conclusion
 
-This concludes the API documentation for [Your API Name]. If you have any further questions or need assistance, please refer to the [API Documentation](https://api.yourdomain.com/) or contact our support team at [support@techelementbd.com].
+This concludes the API documentation for [main software api]. If you have any further questions or need assistance, please refer to the [API Documentation](https://api.yourdomain.com/) or contact our support team at [support@techelementbd.com].
 
 Thank you for using [HRM APP]!
