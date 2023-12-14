@@ -453,6 +453,7 @@ DELETE /expense-sub-categories/1/
   - `{staff_id}`: Staff Member ID (integer)
   - `start_date` (optional): Start date in YYYY-MM-DD format
   - `end_date` (optional): End date in YYYY-MM-DD format
+  - `/api/hrm/expense_history/1/?start=2023-01-01&end_date=2024-12-31` (example url)
 
 #### Sample GET Response
 
