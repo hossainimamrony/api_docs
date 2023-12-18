@@ -193,7 +193,9 @@ The Staff Management API provides endpoints for managing staff information, incl
 
 **Endpoint:** `/salary_report/{month}/{year}/`  
 **Method:** GET  
-**Description:** Generate a salary report for a specific month and year.
+**Description:** Generate a salary report for a specific month and year.<br>
+**Example Url:** `/api/hrm/salary_report/1/2023/`<br>
+<sub> ***If you need any additional details about the staff, you have to use the staff ID to retrieve that data. Refer to the staff section for instructions on how to do that.*** </sub>
 
 ### Create Salary
 
