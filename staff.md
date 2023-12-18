@@ -227,17 +227,23 @@ The Staff Management API provides endpoints for managing staff information, incl
 **JSON Data Example:**
 ```json
 {
-  "date": "2023-12-18",
+  "date": "2023-01-01",
   "attendances": [
     {
       "staff_id": 1,
-     
-
- "status": "present"
+      "in_time": "09:00:00",
+      "out_time": "17:00:00",
+      "status": "present"
     },
-    // Additional attendance entries
+    {
+      "staff_id": 2,
+      "in_time": "10:30:00",
+      "out_time": "18:30:00",
+      "status": "present"
+    }
   ]
 }
+
 ```
 
 ### Get Staff Attendance Report
