@@ -167,12 +167,16 @@ The Staff Management API provides endpoints for managing staff information, incl
 **Description:** Create a new expense.  
 **JSON Data Example:**
 ```json
-{
-  "staff_id": 1,
-  "amount": 100.0,
-  "description": "Office Supplies",
-  // ... (other expense details)
-}
+        {
+            "id": 7,
+            "month": "10",
+            "year": 2023,
+            "description": "new update",
+            "amount": "10000.00",
+            "staff": 2,
+            "account": 1, //this is id from Account sections
+            "expense_category": null
+        }
 ```
 
 ### Retrieve, Update, Delete Expense
