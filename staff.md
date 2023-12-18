@@ -1,4 +1,5 @@
 # Staff Management API Documentation
+<sub>Your smaller text here</sub>
 
 ## Overview
 
@@ -102,12 +103,39 @@ The Staff Management API provides endpoints for managing staff information, incl
 **Description:** Create a new staff member.  
 **JSON Data Example:**
 ```json
-{
-  "name": "John Doe",
-  "father_name": "Michael Doe",
-  "mother_name": "Alice Doe",
-  // ... (other staff details)
-}
+    {
+        "id": 1,
+        "name": "John Doe",
+        "father_name": "Doe Sr.",
+        "mother_name": "Jane Doe",
+        "address": "123 Main St, Cityville",
+        "permanent_address": "456 Park Ave, Townsville",
+        "date_of_birth": "1990-01-01",
+        "nationality": "Bangladeshi",
+        "religion": "Islam",
+        "marital_status": "Married",
+        "voter_id": "1234567890",
+        "birth_certificate": "BC123456",
+        "blood_group": "A+",
+        "gender": "Male",
+        "mobile": "1234567890",
+        "educational_qualification": "Bachelor's in Computer Science",
+        "experience": "5 years",
+        "staff_id": "S123",
+        "photo": null,
+        "staff_type": "Regular",
+        "office_zone": "North",
+        "joining_date": "2022-01-15",
+        "job_exemption_date": null,
+        "email": "john.doe@example.com",
+        "mobile_occupation": "9876543210",
+        "notes": "This is a note about John Doe.",
+        "notes1": "Another note about John Doe.",
+        "office_time_start": null,
+        "office_time_end": null,
+        "department": 1,
+        "designation": null
+    }
 ```
 
 ### Get List of Staff Members
