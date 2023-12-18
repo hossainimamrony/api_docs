@@ -1,5 +1,4 @@
 # Staff Management API Documentation
-<sub>Your smaller text here</sub>
 
 ## Overview
 
@@ -104,7 +103,6 @@ The Staff Management API provides endpoints for managing staff information, incl
 **JSON Data Example:**
 ```json
     {
-        "id": 1,
         "name": "John Doe",
         "father_name": "Doe Sr.",
         "mother_name": "Jane Doe",
@@ -137,6 +135,8 @@ The Staff Management API provides endpoints for managing staff information, incl
         "designation": null
     }
 ```
+
+<sub>***To accurately calculate attendance status and total working hours, please ensure that both "office_time_start" and "office_end_time" are clearly specified in the document. These parameters are crucial for our system to determine accurate working durations. Thank you for your attention to this matter.***</sub>
 
 ### Get List of Staff Members
 
