@@ -168,7 +168,6 @@ The Staff Management API provides endpoints for managing staff information, incl
 **JSON Data Example:**
 ```json
         {
-            "id": 7,
             "month": "10",
             "year": 2023,
             "description": "new update",
