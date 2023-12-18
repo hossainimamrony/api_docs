@@ -240,11 +240,12 @@ The Staff Management API provides endpoints for managing staff information, incl
 }
 ```
 
-### Get Staff Attendance
+### Get Staff Attendance Report
 
-**Endpoint:** `/staff/attendance/{staff_id}/`  
+**Endpoint:** `/staff/attendance/{date}/`  
 **Method:** GET  
-**Description:** Retrieve the attendance records for a specific staff member.
+**Description:** Retrieve the attendance records for a specific date.
+**Example Url:** `/api/hrm/staff/attendance/2023-12-17/`
 
 ### Get Staff Monthly Report
 
