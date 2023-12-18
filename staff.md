@@ -32,7 +32,7 @@ The Staff Management API provides endpoints for managing staff information, incl
 
 - [Attendance](#attendance)
   - [Create Staff Attendance](#create-staff-attendance)
-  - [Get Staff Attendance](#get-staff-attendance)
+  - [Get Staff Attendance Report](#get-staff-attendance-report)
   - [Get Staff Monthly Report](#get-staff-monthly-report)
 
 ---
