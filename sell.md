@@ -1,12 +1,8 @@
-I apologize for any confusion. Below is the detailed API documentation including parameter details, types, and additional information for each endpoint, as requested.
-
----
-
-# Sales and Inventory Management API Documentation
+# Sales  API Documentation
 
 ## Introduction
 
-Welcome to the Sales and Inventory Management API documentation. This guide will walk you through the available endpoints and their functionalities for seamless integration into your frontend application.
+Welcome to the Sales  API documentation. This guide will walk you through the available endpoints and their functionalities for seamless integration into your frontend application.
 
 ## Table of Contents
 
