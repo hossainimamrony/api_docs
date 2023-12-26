@@ -6,44 +6,42 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 ## Table of Contents
 
-1. [Base URL](#1-base-url)
-2. [Authentication](#2-authentication)
-3. [Error Responses](#3-error-responses)
-4. [Locations](#4-locations)
+
+1. [Locations](#4-locations)
    - [Get All Locations](#41-get-all-locations)
    - [Get Location Details](#42-get-location-details)
    - [Create a New Location](#43-create-a-new-location)
    - [Update Location Details](#44-update-location-details)
    - [Delete a Location](#45-delete-a-location)
-5. [Sales](#5-sales)
+2. [Sales](#5-sales)
    - [Get All Sales](#51-get-all-sales)
    - [Get Sale Details](#52-get-sale-details)
    - [Create a New Sale](#53-create-a-new-sale)
    - [Update Sale Details](#54-update-sale-details)
    - [Delete a Sale](#55-delete-a-sale)
    - [Search and Filter Sales](#56-search-and-filter-sales)
-6. [Drafts](#6-drafts)
+3. [Drafts](#6-drafts)
    - [Get All Drafts](#61-get-all-drafts)
    - [Get Draft Details](#62-get-draft-details)
    - [Create a New Draft](#63-create-a-new-draft)
    - [Update Draft Details](#64-update-draft-details)
    - [Delete a Draft](#65-delete-a-draft)
    - [Search and Filter Drafts](#66-search-and-filter-drafts)
-7. [Sell Returns](#7-sell-returns)
+4. [Sell Returns](#7-sell-returns)
    - [Get All Sell Returns](#71-get-all-sell-returns)
    - [Get Sell Return Details](#72-get-sell-return-details)
    - [Create a New Sell Return](#73-create-a-new-sell-return)
    - [Update Sell Return Details](#74-update-sell-return-details)
    - [Delete a Sell Return](#75-delete-a-sell-return)
    - [Search and Filter Sell Returns](#76-search-and-filter-sell-returns)
-8. [Shipments](#8-shipments)
+5. [Shipments](#8-shipments)
    - [Get All Shipments](#81-get-all-shipments)
    - [Get Shipment Details](#82-get-shipment-details)
    - [Create a New Shipment](#83-create-a-new-shipment)
    - [Update Shipment Details](#84-update-shipment-details)
    - [Delete a Shipment](#85-delete-a-shipment)
    - [Search and Filter Shipments](#86-search-and-filter-shipments)
-9. [Discounts](#9-discounts)
+6. [Discounts](#9-discounts)
    - [Get All Discounts](#91-get-all-discounts)
    - [Get Discount Details](#92-get-discount-details)
    - [Create a New Discount](#93-create-a-new-discount)
@@ -53,47 +51,24 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
    - [Search and Filter Discounts](#search-and-filter-discounts)
 
-## 1. Base URL
 
-The base URL for all API endpoints is:
 
-```
-https://your-api-base-url.com/
-```
 
-## 2. Authentication
+## 1. Locations
 
-The API uses token-based authentication. Include the token in the `Authorization` header of each request.
-
-```plaintext
-Authorization: Token your_token_here
-```
-
-## 3. Error Responses
-
-In case of an error, the API will respond with a JSON object containing an `error` key with a corresponding error message.
-
-```json
-{
-  "error": "Error message here"
-}
-```
-
-## 4. Locations
-
-### 4.1 Get All Locations
+### 1.1 Get All Locations
 
 - **URL:** `/locationapil/`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all locations.
 
-### 4.2 Get Location Details
+### 1.2 Get Location Details
 
 - **URL:** `/locationapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific location by providing its primary key (`pk`).
 
-### 4.3 Create a New Location
+### 1.3 Create a New Location
 
 - **URL:** `/locationapil/`
 - **Method:** `POST`
@@ -111,7 +86,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 - `Location` (string, required): The name of the new location.
 
-### 4.4 Update Location Details
+### 1.4 Update Location Details
 
 - **URL:** `/locationapid/{pk}`
 - **Method:** `PUT`
@@ -129,27 +104,27 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 - `Location` (string, required): The updated name of the location.
 
-### 4.5 Delete a Location
+### 1.5 Delete a Location
 
 - **URL:** `/locationapid/{pk}`
 - **Method:** `DELETE`
 - **Description:** Delete a location by providing its primary key (`pk`).
 
-## 5. Sales
+## 2. Sales
 
-### 5.1 Get All Sales
+### 2.1 Get All Sales
 
 - **URL:** `/allsalesadd/`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all sales.
 
-### 5.2 Get Sale Details
+### 2.2 Get Sale Details
 
 - **URL:** `/allsalesapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific sale by providing its primary key (`pk`).
 
-### 5.3 Create a New Sale
+### 2.3 Create a New Sale
 
 - **URL:** `/allsalesadd/`
 - **Method:** `POST`
@@ -193,7 +168,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 - `Total_Items` (string, required): The total number of items in the sale.
 - `Added_By` (string, required): The name of the user who added the sale.
 
-### 5.4 Update Sale Details
+### 2.4 Update Sale Details
 
 - **URL:** `/allsalesapid/{pk}`
 - **Method:** `PUT`
@@ -211,33 +186,33 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 - `Total_Paid` (string, required): The updated total amount paid for the sale.
 
-### 5.5 Delete a Sale
+### 2.5 Delete a Sale
 
 - **URL:** `/allsalesapid/{pk}`
 - **Method:** `DELETE`
 - **Description:** Delete a sale by providing its primary key (`pk`).
 
-### 5.6 Search and Filter Sales
+### 2.6 Search and Filter Sales
 
 - **URL:** `/allsalesdisplayfilter/?search=query&ordering=field_name`
 - **Method:** `GET`
 - **Description:** Search and filter sales. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
 
-## 6. Drafts
+## 3. Drafts
 
-### 6.1 Get All Drafts
+### 3.1 Get All Drafts
 
 - **URL:** `/listdraftadd/`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all drafts.
 
-### 6.2 Get Draft Details
+### 3.2 Get Draft Details
 
 - **URL:** `/listdraftapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific draft by providing its primary key (`pk`).
 
-### 6.3 Create a New Draft
+### 3.3 Create a New Draft
 
 - **URL:** `/listdraftadd/`
 - **Method:** `POST`
@@ -265,7 +240,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 - `Total_Items` (string, required): The total number of items in the draft.
 - `Added_By` (string, required): The name of the user who added the draft.
 
-### 6.4 Update Draft Details
+### 3.4 Update Draft Details
 
 - **URL:** `/listdraftapid/{pk}`
 - **Method:** `PUT`
@@ -283,13 +258,13 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 - `Total_Items` (string, required): The updated total number of items in the draft.
 
-### 6.5 Delete a Draft
+### 3.5 Delete a Draft
 
 - **URL:** `/listdraftapid/{pk}`
 - **Method:** `DELETE`
 - **Description:** Delete a draft by providing its primary key (`pk`).
 
-### 6.6 Search and Filter Drafts
+### 3.6 Search and Filter Drafts
 
 - **URL:** `/listdraftdisplayfilter/?search=query&ordering=field_name`
 - **Method:** `GET`
@@ -297,21 +272,21 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 
 
-## 7. Sell Returns
+## 4. Sell Returns
 
-### 7.1 Get All Sell Returns
+### 4.1 Get All Sell Returns
 
 - **URL:** `/listsellreturnadd/`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all sell returns.
 
-### 7.2 Get Sell Return Details
+### 4.2 Get Sell Return Details
 
 - **URL:** `/listsellreturnapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific sell return by providing its primary key (`pk`).
 
-### 7.3 Create a New Sell Return
+### 4.3 Create a New Sell Return
 
 - **URL:** `/listsellreturnadd/`
 - **Method:** `POST`
@@ -343,7 +318,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 - **Total_Amount (String):** The total amount for the sell return.
 - **Payment_Due (String):** The due amount for payment.
 
-### 7.4 Update Sell Return Details
+### 4.4 Update Sell Return Details
 
 - **URL:** `/listsellreturnapid/{pk}`
 - **Method:** `PUT`
@@ -361,33 +336,33 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 - **Payment_Due (String):** The updated due amount for payment.
 
-### 7.5 Delete a Sell Return
+### 4.5 Delete a Sell Return
 
 - **URL:** `/listsellreturnapid/{pk}`
 - **Method:** `DELETE`
 - **Description:** Delete a sell return by providing its primary key (`pk`).
 
-### 7.6 Search and Filter Sell Returns
+### 4.6 Search and Filter Sell Returns
 
 - **URL:** `/listsellreturndisplayfilter/?search=query&ordering=field_name`
 - **Method:** `GET`
 - **Description:** Search and filter sell returns. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
 
-## 8. Shipments
+## 5. Shipments
 
-### 8.1 Get All Shipments
+### 5.1 Get All Shipments
 
 - **URL:** `/shipmentadd/`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all shipments.
 
-### 8.2 Get Shipment Details
+### 5.2 Get Shipment Details
 
 - **URL:** `/shipmentapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific shipment by providing its primary key (`pk`).
 
-### 8.3 Create a New Shipment
+### 5.3 Create a New Shipment
 
 - **URL:** `/shipmentadd/`
 - **Method:** `POST`
@@ -417,7 +392,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 - **Payment_Status (String):** The payment status of the shipment (choices: 'None', 'Due', 'Partial', 'Paid').
 - **Service_Staff (String):** The staff member responsible for the service.
 
-### 8.4 Update Shipment Details
+### 5.4 Update Shipment Details
 
 - **URL:** `/shipmentapid/{pk}`
 - **Method:** `PUT`
@@ -435,33 +410,33 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 - **Shipping_Status (String):** The updated shipping status of the shipment.
 
-### 8.5 Delete a Shipment
+### 5.5 Delete a Shipment
 
 - **URL:** `/shipmentapid/{pk}`
 - **Method:** `DELETE`
 - **Description:** Delete a shipment by providing its primary key (`pk`).
 
-### 8.6 Search and Filter Shipments
+### 5.6 Search and Filter Shipments
 
 - **URL:** `/shipmentdisplayfilter/?search=query&ordering=field_name`
 - **Method:** `GET`
 - **Description:** Search and filter shipments. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
 
-## 9. Discounts
+## 6. Discounts
 
-### 9.1 Get All Discounts
+### 6.1 Get All Discounts
 
 - **URL:** `/discountadd/`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all discounts.
 
-### 9.2 Get Discount Details
+### 6.2 Get Discount Details
 
 - **URL:** `/discountapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific discount by providing its primary key (`pk`).
 
-### 9.3 Create a New Discount
+### 6.3 Create a New Discount
 
 - **URL:** `/discountadd/`
 - **Method:** `POST`
@@ -495,7 +470,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 - **Product (String):** The product associated with the discount.
 - **Location (Integer):** The primary key of the location associated with the discount.
 
-### 9.4 Update Discount Details
+### 6.4 Update Discount Details
 
 - **URL:** `/discountapid/{pk}`
 - **
@@ -515,13 +490,13 @@ Method:** `PUT`
 
 - **Discount_Amount (String):** The updated discount amount.
 
-### 9.5 Delete a Discount
+### 6.5 Delete a Discount
 
 - **URL:** `/discountapid/{pk}`
 - **Method:** `DELETE`
 - **Description:** Delete a discount by providing its primary key (`pk`).
 
-### 9.6 Search and Filter Discounts
+### 6.6 Search and Filter Discounts
 
 - **URL:** `/discountdisplayfilter/?search=query&ordering=field_name`
 - **Method:** `GET`
