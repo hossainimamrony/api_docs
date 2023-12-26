@@ -123,6 +123,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **URL:** `/allsalesapid/{pk}`
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific sale by providing its primary key (`pk`).
+- **Note:** Please refrain from adding a trailing `/` after the primary key (`pk`).
 
 ### 2.3 Create a New Sale
 
