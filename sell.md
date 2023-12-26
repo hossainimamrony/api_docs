@@ -63,10 +63,11 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 ### 1.2 Get Location Details
 
-- **URL:** `/locationapid/{pk}`
+- **URL:** `/locationapid/{pk}` (do not `/` add after the pk)
 - **Method:** `GET`
 - **Description:** Retrieve details of a specific location by providing its primary key (`pk`).
-
+- **Note:** Please refrain from adding a trailing `/` after the primary key (`pk`).
+  
 ### 1.3 Create a New Location
 
 - **URL:** `/locationapil/`
