@@ -343,7 +343,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 ### 4.6 Search and Filter Sell Returns
 
-- **URL:** `/listsellreturndisplayfilter/?search=query&ordering=field_name`
+- **URL:** `/listsellreturndisplayfilter/?search=query`
 - **Method:** `GET`
 - **Description:** Search and filter sell returns. You can use the `search` parameter for search queries.
 
@@ -417,9 +417,9 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 ### 5.6 Search and Filter Shipments
 
-- **URL:** `/shipmentdisplayfilter/?search=query&ordering=field_name`
+- **URL:** `/shipmentdisplayfilter/?search=query`
 - **Method:** `GET`
-- **Description:** Search and filter shipments. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
+- **Description:** Search and filter shipments. You can use the `search` parameter for search queries .
 
 # 6. Discounts
 
@@ -497,9 +497,9 @@ Method:** `PUT`
 
 ### 6.6 Search and Filter Discounts
 
-- **URL:** `/discountdisplayfilter/?search=query&ordering=field_name`
+- **URL:** `/discountdisplayfilter/?search=query`
 - **Method:** `GET`
-- **Description:** Search and filter discounts. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
+- **Description:** Search and filter discounts. You can use the `search` parameter for search queries.
 
 ---
 
