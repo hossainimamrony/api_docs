@@ -14,7 +14,7 @@ Welcome to the Sales and Inventory Management API documentation. This guide will
 2. [Authentication](#authentication)
 3. [Error Responses](#error-responses)
 4. [Locations](#locations)
-   - [4.1 Get All Locations](#get-all-locations)
+   - [4.1 Get All Locations](#41-get-all-locations)
    - [Get Location Details](#get-location-details)
    - [Create a New Location](#create-a-new-location)
    - [Update Location Details](#update-location-details)
