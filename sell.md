@@ -345,7 +345,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 - **URL:** `/listsellreturndisplayfilter/?search=query&ordering=field_name`
 - **Method:** `GET`
-- **Description:** Search and filter sell returns. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
+- **Description:** Search and filter sell returns. You can use the `search` parameter for search queries.
 
 # 5. Shipments
 
