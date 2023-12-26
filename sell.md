@@ -472,9 +472,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 ### 6.4 Update Discount Details
 
 - **URL:** `/discountapid/{pk}`
-- **
-
-Method:** `PUT`
+- **Method:** `PUT`
 - **Description:** Update details of a specific discount by providing its primary key (`pk`).
 
 ##### Sample Request Body
