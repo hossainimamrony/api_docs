@@ -14,7 +14,7 @@ Welcome to the Sales and Inventory Management API documentation. This guide will
 2. [Authentication](#authentication)
 3. [Error Responses](#error-responses)
 4. [Locations](#locations)
-   - [Get All Locations](#get-all-locations)
+   - [4.1 Get All Locations](#get-all-locations)
    - [Get Location Details](#get-location-details)
    - [Create a New Location](#create-a-new-location)
    - [Update Location Details](#update-location-details)
@@ -83,7 +83,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 ## 4. Locations
 
-### -- Get All Locations
+### 4.1 Get All Locations
 
 - **URL:** `/locationapil/`
 - **Method:** `GET`
