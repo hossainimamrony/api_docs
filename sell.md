@@ -54,7 +54,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 
 
-## 1. Locations
+# 1. Locations
 
 ### 1.1 Get All Locations
 
@@ -110,7 +110,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **Method:** `DELETE`
 - **Description:** Delete a location by providing its primary key (`pk`).
 
-## 2. Sales
+# 2. Sales
 
 ### 2.1 Get All Sales
 
@@ -198,7 +198,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **Method:** `GET`
 - **Description:** Search and filter sales. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
 
-## 3. Drafts
+# 3. Drafts
 
 ### 3.1 Get All Drafts
 
@@ -272,7 +272,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 
 
-## 4. Sell Returns
+# 4. Sell Returns
 
 ### 4.1 Get All Sell Returns
 
@@ -348,7 +348,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **Method:** `GET`
 - **Description:** Search and filter sell returns. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
 
-## 5. Shipments
+# 5. Shipments
 
 ### 5.1 Get All Shipments
 
@@ -422,7 +422,7 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **Method:** `GET`
 - **Description:** Search and filter shipments. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
 
-## 6. Discounts
+# 6. Discounts
 
 ### 6.1 Get All Discounts
 
