@@ -131,8 +131,6 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **Method:** `POST`
 - **Description:** Create a new sale
 
-.
-
 #### Sample Request Body
 
 ```json
