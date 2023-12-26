@@ -160,11 +160,11 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - `Contact_Number` (string, required): The contact number for the sale.
 - `Location` (integer, required): The ID of the location where the sale occurred.
 - `Payment_Status` (string, required): The payment status of the sale (`None`, `Due`, `Partial`, or `Paid`).
-- `Payment_Method` (string, required): The payment method used for the sale (`None`, `Cash`, `Check`, etc.).
+- `Payment_Method` (string, required): The payment method used for the sale (`None`, `Cash`, `Check`, `Bank-Card`, `Bkash`, `Nagad`, `Upay`).
 - `Total_Amount` (string, required): The total amount of the sale.
 - `Total_Paid` (string, required): The total amount paid for the sale.
 - `Sell_Due` (string, required): The remaining amount due for the sale.
-- `Shipping_Status` (string, required): The shipping status of the sale (`None`, `Ordered`, `Pending`, etc.).
+- `Shipping_Status` (string, required): The shipping status of the sale (`None`, `Ordered`, `Pending`, `Paid`).
 - `Shipping_Address` (string, required): The shipping address for the sale.
 - `Total_Items` (string, required): The total number of items in the sale.
 - `Added_By` (string, required): The name of the user who added the sale.
