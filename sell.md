@@ -500,5 +500,3 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 - **Description:** Search and filter discounts. You can use the `search` parameter for search queries.
 
 ---
-
-This completes the API documentation for the specified sections. If you have any further questions or need additional information, feel free to ask!
