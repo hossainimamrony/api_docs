@@ -83,7 +83,7 @@ In case of an error, the API will respond with a JSON object containing an `erro
 
 ## 4. Locations
 
-### 4.1 Get All Locations
+### -- Get All Locations
 
 - **URL:** `/locationapil/`
 - **Method:** `GET`
