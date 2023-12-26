@@ -193,9 +193,9 @@ Welcome to the Sales  API documentation. This guide will walk you through the av
 
 ### 2.6 Search and Filter Sales
 
-- **URL:** `/allsalesdisplayfilter/?search=query&ordering=field_name`
+- **URL:** `/allsalesdisplayfilter/?search=query`
 - **Method:** `GET`
-- **Description:** Search and filter sales. You can use the `search` parameter for search queries and `ordering` parameter for sorting results based on a specific field.
+- **Description:** Search and filter sales. You can use the `search` parameter for search queries (only skip `customer` and `locations` field).
 
 # 3. Drafts
 
