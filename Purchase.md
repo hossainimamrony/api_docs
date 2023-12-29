@@ -19,6 +19,7 @@
   - `Grand_Total` (float): Total purchase amount.
   - `Payment_Due` (float): Due payment amount.
   - `Added_By` (str): User adding the purchase.
+  - `Reference_No`(str): It will be string value.
 
 **Example JSON Data:**
 ```json
@@ -29,7 +30,8 @@
   "Payment_Status": "Due",
   "Grand_Total": 1500.50,
   "Payment_Due": 1200.00,
-  "Added_By": "JohnDoe"
+  "Added_By": "JohnDoe",
+  "Reference_No": null
 }
 ```
 
