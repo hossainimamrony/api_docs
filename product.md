@@ -272,7 +272,7 @@ GET /api/warranties/?warranty_name=SearchKeyword
 **Endpoint:** `/api/warranties/{warranty_id}/`  
 **Method:** DELETE  
 **Description:** Delete a specific warranty.
---
+
 
 
 ## Stock API Documentation
