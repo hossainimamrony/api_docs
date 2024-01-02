@@ -272,4 +272,39 @@ GET /api/warranties/?warranty_name=SearchKeyword
 **Endpoint:** `/api/warranties/{warranty_id}/`  
 **Method:** DELETE  
 **Description:** Delete a specific warranty.
+--
 
+
+## Stock API Documentation
+
+### List Opening Stocks
+- **URL:** `GET /api/openingstocks/`
+- **Example:** `https://your-api-domain.com/api/openingstocks/`
+
+### Get Opening Stock Details
+- **URL:** `GET /api/openingstocks/<int:pk>/`
+- **Example:** `https://your-api-domain.com/api/openingstocks/1/`
+
+### Create Opening Stock
+- **URL:** `POST /api/openingstocks/`
+- **Example:** `https://your-api-domain.com/api/openingstocks/`
+- **Request Body:**
+  ```json
+  {
+    "sku": "XYZ789",
+    "location": "Warehouse B",
+    "quantity": 50,
+    "unit_cost_before_tax": 8.75,
+    "lot_number": "LOT002",
+    "expiry_date": "2023-10-15",
+    "product": 1
+  }
+  ```
+- **Parameters:**
+  - **sku** (string, required): Stock Keeping Unit.
+  - **location** (string): Warehouse location.
+  - **quantity** (integer): Quantity of the product.
+  - **unit_cost_before_tax** (decimal): Cost per unit before tax.
+  - **lot_number** (string): Lot number for tracking.
+  - **expiry_date** (date): Expiry date of the product.
+  - **product** (Id): It take Product  `id`.
